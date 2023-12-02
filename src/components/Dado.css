@@ -1,0 +1,13 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 180px;
+    max-width: 220px;
+}
+
+img{
+    width: 80px;
+    height: 80px;
+    cursor: pointer
+}
