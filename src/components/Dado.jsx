@@ -35,10 +35,19 @@ const Dado = () => {
       default:
         break;
     }
+    const miDiv = document.getElementById("dice");
+
+    // Agregar la clase
+    miDiv.classList.add("destacar");
+
+    // Eliminar la clase después de 1 segundo
+    setTimeout(function () {
+      miDiv.classList.remove("destacar");
+    }, 400);
   };
 
   return (
-    <div className="contenedor">
+    <div id="dice" className="contenedor">
       Dado: <img onClick={handleRoll} src={imagenDado} alt="dice" />
     </div>
   );
