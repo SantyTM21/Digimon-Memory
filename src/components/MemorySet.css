@@ -1,62 +1,59 @@
-.memory{
+.memory {
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid #000;
+  max-width: 650px;
+  max-height: 220px;
+  background-image: linear-gradient(to right, rgb(255, 87, 51), rgb(255, 195, 0));
+  margin-top: 20px;
+}
+.memory-set {
+  flex-direction: column;
+  margin: 5px;
+  gap: 5px;
+  position: relative;
+
+  user-select: none;
+
+  .up {
     display: flex;
-    justify-content: space-evenly;
-    border: 2px solid #000;
-    max-width: 650px;
-    max-height: 220px;
-    background-image: linear-gradient(to right, rgb(107, 16, 203), rgb(38, 117, 252));
-    margin-top: 20px;
-}
-.memory-set{
-    flex-direction: column;
-    margin: 5px;
-    gap: 5px;
-    position: relative;
-    
-    user-select: none;
-
-    .up{
-        display: flex;
-        flex-direction: row;
-        order: -5;
-    }
-    .down{
-        display: flex;
-        flex-direction: row;
-        order: -5;
-    }
-
-    &.right{
-        transform: rotateX(180deg);
-    }
-
-}
-.memory-set-cero{    
-    margin:35px -20px;
-}
-
-
-span{
+    flex-direction: row;
+    order: -5;
+  }
+  .down {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #bbb;
-    border-radius: 50%;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    font-size: 2em;
-    margin: 2px;
-    cursor: pointer;
-    color: #ccc;
-    user-select: none;
+    flex-direction: row;
+    order: -5;
+  }
 
-    &:hover{
-        box-shadow: -2px -2px 10px 2px rgba(115, 67, 228, 0.5);
-        background: linear-gradient(45deg, rgb(38, 117, 252),rgb(107, 16, 203));
-    }
+  &.right {
+    transform: rotateX(180deg);
+  }
+}
+.memory-set-cero {
+  margin: 35px -20px;
 }
 
+span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 2em;
+  margin: 2px;
+  cursor: pointer;
+  color: #ccc;
+  user-select: none;
 
+  &:hover {
+    box-shadow: -2px -2px 10px 2px rgba(115, 67, 228, 0.5);
+    background: linear-gradient(45deg, rgb(250, 128, 114), rgb(203, 16, 162));
+    color: rgb(24, 69, 117);
+  }
+}
